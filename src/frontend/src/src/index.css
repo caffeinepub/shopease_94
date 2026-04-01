@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    /* White background */
+    --background: 1 0 0;
+    --foreground: 0.15 0.01 265;
+    /* Cards: very light gray #F2F3F4 */
+    --card: 0.965 0.003 265;
+    --card-foreground: 0.15 0.01 265;
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0.01 265;
+    /* Primary: deep navy/charcoal #1F2F3A */
+    --primary: 0.28 0.04 240;
+    --primary-foreground: 1 0 0;
+    /* Secondary */
+    --secondary: 0.965 0.003 265;
+    --secondary-foreground: 0.28 0.04 240;
+    --muted: 0.965 0.003 265;
+    --muted-foreground: 0.53 0.012 250;
+    /* Accent: burnt orange #C56A3A */
+    --accent: 0.62 0.14 50;
+    --accent-foreground: 1 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    /* Borders: #D9DDE1 */
+    --border: 0.88 0.005 250;
+    --input: 0.88 0.005 250;
+    --ring: 0.62 0.14 50;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.205 0 0;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
